@@ -1,0 +1,19 @@
+.burger {  
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.burger__icon {
+    height: 16px;
+    width: 30px;
+    fill: var(--main-text);
+}
+
+@media screen and (min-width: 1200px) {
+    .burger {
+        display: none;
+    }
+}

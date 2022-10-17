@@ -1,0 +1,306 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  background: linear-gradient(180.11deg, #E5E2E3 10.73%, #FDFEFE 38.02%, #E5E2E3 71.11%, #FDFEFE 99.91%);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+:root {
+  --main-text: #3C322D;
+  --button-color: #F3848C;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.page-header {
+  padding-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 108px;
+}
+
+.navigation {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 24px;
+  }
+  .logo {
+    width: 106px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 35px;
+    justify-content: start;
+    gap: 47px;
+  }
+  .logo {
+    width: 158px;
+  }
+  .navigation {
+    display: inline;
+  }
+  .navigation__list {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .navigation__link {
+    padding: 4px 8px;
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--main-text);
+  }
+  .navigation__link:hover, .navigation__link:focus {
+    background: linear-gradient(180deg, rgba(248, 110, 103, 0.63) 0%, rgba(253, 86, 143, 0.86) 100%);
+    box-shadow: 0px 7px 27px -2px rgba(253, 88, 140, 0.35);
+    border-radius: 0px;
+    color: #fff;
+    outline: none;
+  }
+}
+.burger {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.burger__icon {
+  height: 16px;
+  width: 30px;
+  fill: var(--main-text);
+}
+
+@media screen and (min-width: 1200px) {
+  .burger {
+    display: none;
+  }
+}
+.header-hero {
+  background-image: url(../images/hero/hero-bg-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: darken;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .header-hero {
+    background-image: url(../images/hero/hero-bg-mobile@2x.jpg);
+  }
+}
+
+.hero {
+  padding-top: 20px;
+  padding-bottom: 8px;
+  text-align: center;
+}
+
+.hero__header {
+  font-family: "Montserrat Alternates";
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.21;
+  letter-spacing: -0.03em;
+  margin-bottom: 18px;
+  color: var(--main-text);
+}
+
+.hero__subheader {
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 28px;
+  color: var(--main-text);
+}
+
+@media screen and (min-width: 768px) {
+  .header-hero {
+    background-image: url(../images/hero/hero-bg-tablet.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi) {
+  .header-hero {
+    background-image: url(../images/hero/hero-bg-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 27px;
+    padding-bottom: 43px;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__header {
+    width: 319px;
+    font-size: 30px;
+    line-height: 1.23;
+    margin-bottom: 10px;
+    letter-spacing: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__subheader {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-hero {
+    background-image: url(../images/hero/hero-bg-desktop.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi) {
+  .header-hero {
+    background-image: url(../images/hero/hero-bg-desktop@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 65px;
+    padding-bottom: 90px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__header {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 1.08;
+    width: 757px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__subheader {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 28px;
+  }
+}
+.register-button {
+  background-color: var(--button-color);
+  color: #fff;
+  padding: 9px 35px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  border: 0;
+  border-radius: 25px;
+  width: 145px;
+  height: 40px;
+  filter: drop-shadow(10px 15px 25px rgba(232, 183, 183, 0.45));
+  cursor: pointer;
+}
+.register-button:hover, .register-button:focus {
+  background-color: #fff;
+  color: var(--button-color);
+  border: 1px solid var(--button-color);
+  outline: none;
+}
+.register-button:active {
+  background-color: var(--button-color);
+  color: #fff;
+}
+
+.register-button__hero {
+  margin-bottom: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .register-button__hero {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .register-button__hero {
+    margin-bottom: 32px;
+  }
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social__item {
+  width: 16px;
+  height: 16px;
+}
+
+.social__icon {
+  width: 16px;
+  height: 16px;
+  fill: var(--main-text);
+}
+.social__icon:hover, .social__icon:focus {
+  fill: var(--button-color);
+}
+
+@media screen and (min-width: 768px) {
+  .social {
+    justify-content: flex-start;
+  }
+}/*# sourceMappingURL=main.css.map */
